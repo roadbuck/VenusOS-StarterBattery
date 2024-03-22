@@ -1,3 +1,11 @@
+STEP 1
+wget -qO - https://github.com/roadbuck/VenusOS-StarterBattery/archive/refs/tags/latest.tar.gz | tar -xzf - -C /data
+STEP 2
+mv /data/VenusOS-StarterBattery-latest /data/StarterBattery
+STEP 3
+python /data/StarterBattery/setup.py
+
+
 Modifications on the following files are neccessary
 
 If you use the default Overview (without GUI-Mods from Kevin Windrem):
