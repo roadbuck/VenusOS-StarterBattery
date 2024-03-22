@@ -6,9 +6,7 @@ If you use the default Overview (without GUI-Mods from Kevin Windrem):
 -----------------------------------------------
 add "RB_StarterBattery {}" after this lines (near line 20)
 
-and it should look like this:
-  OverviewPage {
-  id:root
-  RB_StarterBattery {}
+![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/ffd64506-2d11-49b4-a8b8-711fe9f2dab6)
+
 
   Copy the file RB_StarterBattery.qml into the directory: /opt/victronenergy/gui/qml/
