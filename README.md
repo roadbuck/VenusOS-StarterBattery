@@ -1,6 +1,7 @@
 Go to the commandline of your Victron GX device (Cerbo GX or a Raspberry Pi)
 
 Copy the code from step 1 to step 3, paste it on the commandline (right mouse button) and execute it
+
 STEP 1
 ```
 wget -qO - https://github.com/roadbuck/VenusOS-StarterBattery/archive/refs/tags/latest.tar.gz | tar -xzf - -C /data
@@ -17,8 +18,8 @@ Modifications on the following files are neccessary
 
 | GUI | File to modify | Directory |
 | --- | --- | --- |
-| Default Victron | OverviewHub.qml<br>main.qml | /opt/victronenergy/gui/qml |
-| GUI Mods enabled | OverviewHubEnhanced.qml<br>main.qml | /opt/victronenergy/gui/qml |
+| Default Victron | main.qml<br>OverviewHub.qml<br>PageSettingsDisplay.qml | /opt/victronenergy/gui/qml |
+| GUI Mods enabled | main.qml<br>OverviewHubEnhanced.qml<br>PageSettingsDisplay.qml | /opt/victronenergy/gui/qml |
 
 add 
 ```
