@@ -76,6 +76,8 @@ source_files = [
     '/opt/victronenergy/gui/qml/main.qml',
     '/opt/victronenergy/gui/qml/OverviewHubEnhanced.qml',
     '/opt/victronenergy/gui/qml/PageSettingsDisplay.qml',
+    '/opt/victronenergy/gui/qml/PageSettingsRoadbuckStarterBattery.qml',
+    '/opt/victronenergy/gui/qml/RB_StarterBattery.qml',
 ]
 
 destination_directory = '/data/RoadbuckMods/StarterBattery/backup_files'
