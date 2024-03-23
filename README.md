@@ -4,7 +4,7 @@ This will add the Starter battery info on the main page of the Cerbo GX / Raspbe
 
 Go to the commandline of your Victron GX device (Cerbo GX or a Raspberry Pi)
 
-Copy the code from step 1 to step 3, paste it on the commandline (right mouse button) and execute it. After that you have to modify 3 files.
+Copy the code from step 1 to step 3, paste it on the commandline (right mouse button) and execute it. After that you have to modify 3 files (step 4-6).
 
 ## STEP 1
 ```
