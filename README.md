@@ -11,8 +11,15 @@ wget -qO - https://github.com/roadbuck/VenusOS-StarterBattery/archive/refs/tags/
 mv /data/VenusOS-StarterBattery-latest /data/StarterBattery
 ```
 ## STEP 3
+Choose the setup and the language you want to install. Please choose only one... ;-)
+
+english version!
 ```
-python /data/StarterBattery/setup.py
+python /data/StarterBattery/setup-en.py
+```
+german version!
+```
+python /data/StarterBattery/setup-de.py
 ```
 Modifications on the following files are neccessary (starting with STEP 4)
 
