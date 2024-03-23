@@ -40,7 +40,7 @@ VBusItem { id: starterBatteryVoltage; bind:("com.victronenergy.battery.ttyUSB3/D
 ## STEP 5
 add to file **/opt/victronenergy/gui/qml/OverviewHub.qml** or **/opt/victronenergy/gui/qml/OverviewHubEnhanced.qml** (depending, which GUI you use... see table) You can also modify both, if you want to switch between GUI types
 ```
-RB_StarterBattery {}
+RB_StarterBattery {} // RB Mods
 ```
 after this lines (near line 20)
 
