@@ -9,8 +9,8 @@ addAllDbusSettings () {
             settings+="$line, "
         done < "/data/RoadbuckMods/StarterBattery/files/DbusUpdate"
 
-        #dbus -y com.victronenergy.settings / AddSettings "%[ $settings  ]" &> /dev/null
-        dbus -y com.victronenergy.settings / AddSettings "%[ $settings  ]"
+        dbus -y com.victronenergy.settings / AddSettings "%[ $settings  ]" &> /dev/null
+        #dbus -y com.victronenergy.settings / AddSettings "%[ $settings  ]"
     else
         echo "DbusSettingsList file not found"
     fi
