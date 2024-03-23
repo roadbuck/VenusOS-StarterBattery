@@ -74,6 +74,7 @@ for file_info in files_to_copy:
 
 source_files = [
     '/opt/victronenergy/gui/qml/main.qml',
+    '/opt/victronenergy/gui/qml/OverviewHub.qml',
     '/opt/victronenergy/gui/qml/OverviewHubEnhanced.qml',
     '/opt/victronenergy/gui/qml/PageSettingsDisplay.qml',
     '/opt/victronenergy/gui/qml/PageSettingsRoadbuckStarterBattery.qml',
