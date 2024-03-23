@@ -63,4 +63,16 @@ Modifications to file **/opt/victronenergy/gui/qml/PageSettingsDisplay.qml**
 
 And that's it. 
 
+## STEP 7
+Restart your GUI to see the changes
+
+Cerbo:
+```
+svc -t /service/start-gui
+```
+
+Raspbery: 
+```
+svc -t /service/gui
+```
  
