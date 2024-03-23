@@ -84,7 +84,7 @@ Cerbo:
 svc -t /service/start-gui
 ```
 
-Raspbery: 
+Raspberry: 
 ```
 svc -t /service/gui
 ```
@@ -105,7 +105,18 @@ in the config section...
 
 ![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/228c5b51-0014-4279-b853-df325713678d)
 
+## Additional Info
+If you use the GUI mods with activated temperature or tanksensor, there is not much space between the starter battery and the line from the inverter to the battery.
 
+![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/c2173458-e899-4182-b449-2706834a0bb3)
 
+To change that, you need just 3 little changes in the /opt/victronenergy/gui/qml/OverviewHubEnhanced.qml:
 
+![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/8f7c3a46-8c1d-4ac8-b16b-2f1cee4ddbde)
+
+![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/158d96d4-86bf-4157-8431-3c61a3215665)
+
+Now it should look like this:
+
+![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/377bb176-22ef-4770-b6e5-dfc60303d352)
 
