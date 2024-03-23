@@ -75,4 +75,24 @@ Raspbery:
 ```
 svc -t /service/gui
 ```
- 
+
+in the menu of the GX Device "Settings->Display & Language" you have now a new Menu for the StarterBattery:
+
+![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/0dedceea-34db-4b47-8d50-88bf184e0683)
+
+You can turn on and off the visibility on the mainpage
+
+![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/7b052ff2-6069-46ab-b4aa-6eb6f0ce5927)
+
+in the config section...
+
+![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/dfdf3143-b536-4f3a-b549-14a02fa513ab)
+
+...you can modify the threshold values
+
+![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/228c5b51-0014-4279-b853-df325713678d)
+
+
+
+
+
