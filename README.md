@@ -1,6 +1,8 @@
 This will add the Starter battery info on the main page of the Cerbo GX / Raspberry and has a config section in the settings.
 
-Tested with firmware 3.22 large.
+Tested with firmware
+3.22 large
+3.30 large
 
 ![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/1145eb5b-6487-476e-a5e8-aba6b58d941c)
 
