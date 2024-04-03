@@ -4,11 +4,17 @@ import com.victron.velib 1.0
 
 MbPage {
 	id: root
-	title: qsTr("Roadbuck Mods: Starterbatterie")
+	title: qsTr("Konfiguration Starterbatterie")
     property string bindPrefixRoadbuckMods: "com.victronenergy.settings/Settings/RoadbuckMods"
 
 	model: VisualItemModel
     {
+			MbSwitch {
+								id: starterBatteryOnMainPage
+								bind: Utils.path(bindPrefixRbMods, "/StarterBattery/ShowStarterBattery")
+								name: qsTr ("Starterbatterie auf Hauptseite anzeigen")
+								writeAccessLevel: User.AccessUser
+						}
 
 			MbSpinBox {
 					description: qsTr ("Niedrige Spannung")
