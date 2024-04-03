@@ -43,6 +43,5 @@ MbPage {
 					writeAccessLevel: User.AccessUser
 			}
 
-
-    }
+		}
 }
