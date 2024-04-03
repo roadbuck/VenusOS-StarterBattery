@@ -25,37 +25,37 @@ MbPage {
 
 			MbSubMenu
 			{
-			    description: qsTr("Truma")
-			    subpage: Component { PageSettingsRoadbuckTruma {} }
-			    show: showTruma.value >= 0
+			    	description: qsTr("Truma")
+			    	subpage: Component { PageSettingsRoadbuckTruma {} }
+			    	show: showTruma.value >= 0
 			}
 
 			MbSubMenu
 			{
-					description: qsTr("MaxxFan")
-					subpage: Component { PageSettingsRoadbuckMaxxFan {} }
-					show: showMaxxFan.value >= 0
+				description: qsTr("MaxxFan")
+				subpage: Component { PageSettingsRoadbuckMaxxFan {} }
+				show: showMaxxFan.value >= 0
 			}
 
 			MbSubMenu
 			{
-			    description: qsTr("Teltonika")
-			    subpage: Component { PageSettingsRoadbuckTeltonika {} }
-			    show: showTeltonika.value >= 0
+			    	description: qsTr("Teltonika")
+			    	subpage: Component { PageSettingsRoadbuckTeltonika {} }
+			    	show: showTeltonika.value >= 0
 			}
 
 			MbSubMenu
 			{
-			    description: qsTr("Shelly")
-			    subpage: Component { PageSettingsRoadbuckShelly {} }
-			    show: showTeltonika.value >= 0
+				description: qsTr("Shelly")
+				subpage: Component { PageSettingsRoadbuckShelly {} }
+			    	show: showTeltonika.value >= 0
 			}
 
 			MbSubMenu
 			{
-			    description: qsTr("Weather")
-			    subpage: Component { PageSettingsRoadbuckWeather {} }
-			    show: showWeather.value >= 0
+			    	description: qsTr("Weather")
+			    	subpage: Component { PageSettingsRoadbuckWeather {} }
+			    	show: showWeather.value >= 0
 			}
 
   } // VisibleItemModel
