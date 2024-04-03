@@ -12,9 +12,9 @@ MbPage {
 		VBusItem { id: showTeltonika; bind: Utils.path(bindPrefixRbMods, "/StarterBattery/Teltonika")}
 		VBusItem { id: showShelly; bind: Utils.path(bindPrefixRbMods, "/StarterBattery/ShowShelly")}
 		VBusItem { id: showWeather; bind: Utils.path(bindPrefixRbMods, "/StarterBattery/ShowWeather")}
-	model: VisibleItemModel
-    {
 
+model: VisibleItemModel
+    {
 			MbSubMenu
 			{
 				description: qsTr("Starterbatterie")
@@ -24,9 +24,9 @@ MbPage {
 
 			MbSubMenu
 			{
-			    description: qsTr("Truma")
-			    subpage: Component { PageSettingsRoadbuckTruma {} }
-			    show: showTruma.value >= 0
+			    	description: qsTr("Truma")
+			    	subpage: Component { PageSettingsRoadbuckTruma {} }
+			    	show: showTruma.value >= 0
 			}
 
 			MbSubMenu
@@ -38,23 +38,23 @@ MbPage {
 
 			MbSubMenu
 			{
-			    description: qsTr("Teltonika")
-			    subpage: Component { PageSettingsRoadbuckTeltonika {} }
-			    show: showTeltonika.value >= 0
+			    	description: qsTr("Teltonika")
+			   	subpage: Component { PageSettingsRoadbuckTeltonika {} }
+			   	show: showTeltonika.value >= 0
 			}
 
 			MbSubMenu
 			{
-			    description: qsTr("Shelly")
-			    subpage: Component { PageSettingsRoadbuckShelly {} }
-			    show: showTeltonika.value >= 0
+			    	description: qsTr("Shelly")
+			    	subpage: Component { PageSettingsRoadbuckShelly {} }
+			    	show: showTeltonika.value >= 0
 			}
 
 			MbSubMenu
 			{
-			    description: qsTr("Wetter")
-			    subpage: Component { PageSettingsRoadbuckWeather {} }
-			    show: showWeather.value >= 0
+			    	description: qsTr("Wetter")
+			    	subpage: Component { PageSettingsRoadbuckWeather {} }
+			    	show: showWeather.value >= 0
 			}
 
 
