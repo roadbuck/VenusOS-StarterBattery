@@ -59,6 +59,26 @@ files_to_copy = [
         'source': '/data/RoadbuckMods/StarterBattery/files/qml/EN_PageSettingsRoadbuckStarterBattery.qml',
         'destination': '/opt/victronenergy/gui/qml/PageSettingsRoadbuckStarterBattery.qml'
     },
+    {
+        'source': '/data/RoadbuckMods/StarterBattery/files/qml/EN_PageSettingsRoadbuckTruma.qml',
+        'destination': '/opt/victronenergy/gui/qml/PageSettingsRoadbuckTruma.qml'
+    },
+    {
+        'source': '/data/RoadbuckMods/StarterBattery/files/qml/EN_PageSettingsRoadbuckMaxxFan.qml',
+        'destination': '/opt/victronenergy/gui/qml/PageSettingsRoadbuckMaxxFan.qml'
+    },
+    {
+        'source': '/data/RoadbuckMods/StarterBattery/files/qml/EN_PageSettingsRoadbuckShelly.qml',
+        'destination': '/opt/victronenergy/gui/qml/PageSettingsRoadbuckShelly.qml'
+    },
+    {
+        'source': '/data/RoadbuckMods/StarterBattery/files/qml/EN_PageSettingsRoadbuckTeltonika.qml',
+        'destination': '/opt/victronenergy/gui/qml/PageSettingsRoadbuckTeltonika.qml'
+    },
+    {
+        'source': '/data/RoadbuckMods/StarterBattery/files/qml/EN_PageSettingsRoadbuckWeather.qml',
+        'destination': '/opt/victronenergy/gui/qml/PageSettingsRoadbuckWeather.qml'
+    },
 ]
 
 for file_info in files_to_copy:

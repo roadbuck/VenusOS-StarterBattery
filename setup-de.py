@@ -12,23 +12,23 @@ directories = [
 for directory in directories:
     if not os.path.exists(directory):
         os.makedirs(directory)
-        print(f"Directory {directory} created.")
+        print(f"Verzeichnis {directory} erstellt.")
     else:
-        print(f"Directory {directory} already exists.")
+        print(f"Verzeichnis {directory} existiert bereits.")
 
 source_directory = '/data/StarterBattery/files'
 destination_directory = '/data/RoadbuckMods/StarterBattery'
 
 try:
     shutil.move(source_directory, destination_directory)
-    print("Directory moved successfully.")
+    print("Verzeichnis erfolgreich verschoben.")
 except Exception as e:
-    print(f"Error moving directory: {e}")
+    print(f"Fehler beim Verschieben des Verzeichnisses: {e}")
 
 def set_file_permissions(file_path, permissions):
     try:
         os.chmod(file_path, permissions)
-        print(f"Permissions for {file_path} set to {permissions}.")
+        print(f"Berechtigungen für {file_path} auf {permissions} gesetzt.")
     except Exception as e:
         print(f"Error setting permissions for {file_path}: {e}")
 
@@ -59,6 +59,26 @@ files_to_copy = [
         'source': '/data/RoadbuckMods/StarterBattery/files/qml/DE_PageSettingsRoadbuckStarterBattery.qml',
         'destination': '/opt/victronenergy/gui/qml/PageSettingsRoadbuckStarterBattery.qml'
     },
+    {
+        'source': '/data/RoadbuckMods/StarterBattery/files/qml/DE_PageSettingsRoadbuckTruma.qml',
+        'destination': '/opt/victronenergy/gui/qml/PageSettingsRoadbuckTruma.qml'
+    },
+    {
+        'source': '/data/RoadbuckMods/StarterBattery/files/qml/DE_PageSettingsRoadbuckMaxxFan.qml',
+        'destination': '/opt/victronenergy/gui/qml/PageSettingsRoadbuckMaxxFan.qml'
+    },
+    {
+        'source': '/data/RoadbuckMods/StarterBattery/files/qml/DE_PageSettingsRoadbuckShelly.qml',
+        'destination': '/opt/victronenergy/gui/qml/PageSettingsRoadbuckShelly.qml'
+    },
+    {
+        'source': '/data/RoadbuckMods/StarterBattery/files/qml/DE_PageSettingsRoadbuckTeltonika.qml',
+        'destination': '/opt/victronenergy/gui/qml/PageSettingsRoadbuckTeltonika.qml'
+    },
+    {
+        'source': '/data/RoadbuckMods/StarterBattery/files/qml/DE_PageSettingsRoadbuckWeather.qml',
+        'destination': '/opt/victronenergy/gui/qml/PageSettingsRoadbuckWeather.qml'
+    },
 ]
 
 for file_info in files_to_copy:
@@ -67,10 +87,10 @@ for file_info in files_to_copy:
 
     if os.path.exists(destination_path):
         os.rename(destination_path, destination_path + '.orig')
-        print(f"The existing file has been renamed to {destination_path}.orig")
+        print(f"Die existierende Datei wurde umbenannt zu {destination_path}.orig")
 
     shutil.copy(source_path, destination_path)
-    print(f"The file has been copied from {source_path} to {destination_path}")
+    print(f"Die Datei wurde von {source_path} nach {destination_path} kopiert")
 
 source_files = [
     '/opt/victronenergy/gui/qml/main.qml',
@@ -88,10 +108,10 @@ destination_directory_with_timestamp = os.path.join(destination_directory, curre
 
 if not os.path.exists(destination_directory_with_timestamp):
     os.makedirs(destination_directory_with_timestamp)
-    print(f"Directory {destination_directory_with_timestamp} created")
+    print(f"Verzeichnis {destination_directory_with_timestamp} angelegt")
 
 for file_path in source_files:
     file_name = os.path.basename(file_path)
     destination_path = os.path.join(destination_directory_with_timestamp, file_name)
     shutil.copy(file_path, destination_path)
-    print(f"File {file_path} copied to {destination_path}")
+    print(f"Dateo {file_path} kopiert nach {destination_path}")
