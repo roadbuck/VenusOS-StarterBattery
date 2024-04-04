@@ -6,16 +6,17 @@ MbPage {
 	id: root
 	title: qsTr("Roadbuck Mods")
 		property string bindPrefixRbMods: "com.victronenergy.settings/Settings/RoadbuckMods"
+		property string bindPrefix: "com.victronenergy.settings/Settings/Gui"
 		VBusItem { id: showStarter; bind: Utils.path(bindPrefixRbMods, "/StarterBattery/ShowStarterBattery")}
-		VBusItem { id: showTruma; bind: Utils.path(bindPrefixRbMods, "/StarterBattery/ShowTruma")}
-		VBusItem { id: showMaxxFan; bind: Utils.path(bindPrefixRbMods, "/StarterBattery/ShowMaxxFan")}
-		VBusItem { id: showTeltonika; bind: Utils.path(bindPrefixRbMods, "/StarterBattery/ShowTeltonika")}
-		VBusItem { id: showShelly; bind: Utils.path(bindPrefixRbMods, "/StarterBattery/ShowShelly")}
-		VBusItem { id: showWeather; bind: Utils.path(bindPrefixRbMods, "/StarterBattery/ShowWeather")}
+		VBusItem { id: showTruma; bind: Utils.path(bindPrefixRbMods, "/Truma/ShowTrumaOverview")}
+		VBusItem { id: showMaxxFan; bind: Utils.path(bindPrefixRbMods, "/MaxxFan/ShowMaxxFanOverview")}
+		VBusItem { id: showShelly; bind: Utils.path(bindPrefixRbMods, "/Shelly/ShowShellyOverview")}
+		VBusItem { id: showWeather; bind: Utils.path(bindPrefixRbMods, "/Weather/ShowWeatherOverview")}
+		VBusItem { id: showTeltonika; bind: Utils.path(bindPrefixRbMods, "/Teltonika/ShowTeltonikaOverview")}
 
 	model: VisibleItemModel
 	{
-		
+
 			MbSubMenu
 			{
 				description: qsTr("Starterbatterie")
@@ -48,7 +49,7 @@ MbPage {
 			{
 				description: qsTr("Shelly")
 				subpage: Component { PageSettingsRoadbuckShelly {} }
-				show: showTeltonika.value >= 0
+				show: showShelly.value >= 0
 			}
 
 			MbSubMenu
