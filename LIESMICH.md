@@ -35,7 +35,7 @@ python /data/StarterBattery/setup-de.py
 Änderungen an den folgenden Dateien sind erforderlich (beginnend mit STEP 4)
 
 Hier ist eine Übersicht über die Dateien, die geringfügige Änderungen erfordern
-| GUI | File to modify | Directory |
+| GUI | zu bearbeitende Datei | Verzeichnis |
 | --- | --- | --- |
 | Victron standard | OverviewHub.qml<br>PageSettingsDisplay.qml | /opt/victronenergy/gui/qml |
 | mit GUI Mods | OverviewHubEnhanced.qml<br>PageSettingsDisplay.qml | /opt/victronenergy/gui/qml |
