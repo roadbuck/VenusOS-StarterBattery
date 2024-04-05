@@ -100,7 +100,7 @@ im Menü des GX-Gerätes "Einstellungen -> Anzeige & Sprache" gibt es nun ein ne
 
 hier für die Starterbatterie
 
-
+![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/73861f73-09af-4e4e-8c14-f957171fe2f2)
 
 Man kann die Anzeige auf der Hauptseite ein- und ausschalten... 
 
