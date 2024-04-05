@@ -96,17 +96,16 @@ svc -t /service/gui
 
 im Menü des GX-Gerätes "Einstellungen -> Anzeige & Sprache" gibt es nun ein neues Menü für die Starterbatterie:
 
-![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/0dedceea-34db-4b47-8d50-88bf184e0683)
+![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/101ecaa1-a5db-4465-a619-52e6d13852d7)
 
 Man kann die Anzeige auf der Hauptseite ein- und ausschalten... 
 
-![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/7b052ff2-6069-46ab-b4aa-6eb6f0ce5927)
-
-![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/dfdf3143-b536-4f3a-b549-14a02fa513ab)
+![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/baba880d-6b71-4c0c-8eac-38d0a7a9c037)
 
 ... und die Schwellenwerte ändern
 
-![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/228c5b51-0014-4279-b853-df325713678d)
+![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/c5bf2c8f-3e90-4a17-bc9d-d68f3e709d26)
+
 
 ## Zusätzliche Informationen
 Wenn man die GUI-Mods mit aktiviertem Temperatur- oder Tanksensor verwendet, ist nicht viel Platz zwischen der Starterbatterie und der "Leitung" vom Wechselrichter zur Batterie.
