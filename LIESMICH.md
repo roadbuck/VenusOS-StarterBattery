@@ -94,9 +94,13 @@ auf dem Raspberry:
 svc -t /service/gui
 ```
 
-im Menü des GX-Gerätes "Einstellungen -> Anzeige & Sprache" gibt es nun ein neues Menü für die Starterbatterie:
+im Menü des GX-Gerätes "Einstellungen -> Anzeige & Sprache" gibt es nun ein neues Menü für alle meine Module:
 
 ![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/101ecaa1-a5db-4465-a619-52e6d13852d7)
+
+hier für die Starterbatterie
+
+
 
 Man kann die Anzeige auf der Hauptseite ein- und ausschalten... 
 
