@@ -86,11 +86,19 @@ for file_info in files_to_copy:
     destination_path = file_info['destination']
 
     if os.path.exists(destination_path):
-        os.rename(destination_path, destination_path + '.orig')
-        print(f"Die existierende Datei wurde umbenannt zu {destination_path}.orig")
+        base_name, ext = os.path.splitext(destination_path)
+        counter = 1
+        new_destination_path = f"{base_name}_{counter}.rbm"
 
-    shutil.copy(source_path, destination_path)
-    print(f"Die Datei wurde von {source_path} nach {destination_path} kopiert")
+        while os.path.exists(new_destination_path):
+            counter += 1
+            new_destination_path = f"{base_name}_{counter}.rbm"
+
+        os.rename(destination_path, new_destination_path)
+        print(f"Die existierende Datei wurde umbenannt zu {new_destination_path}")
+
+    shutil.copy(source_path, new_destination_path)
+    print(f"Die Datei wurde von {source_path} nach {new_destination_path} kopiert")
 
 source_files = [
     '/opt/victronenergy/gui/qml/main.qml',
@@ -114,4 +122,4 @@ for file_path in source_files:
     file_name = os.path.basename(file_path)
     destination_path = os.path.join(destination_directory_with_timestamp, file_name)
     shutil.copy(file_path, destination_path)
-    print(f"Dateo {file_path} kopiert nach {destination_path}")
+    print(f"Datei {file_path} kopiert nach {destination_path}")
