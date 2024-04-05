@@ -96,12 +96,13 @@ for file_info in files_to_copy:
 
         os.rename(destination_path, new_destination_path)
         print(f"The existing file has been renamed to:\n{new_destination_path}")
-
+        shutil.copy(source_path, destination_path)
+        print(f"The new file has been copied to:\n{destination_path}")
     else:
-        new_destination_path = destination_path
+        shutil.copy(source_path, destination_path)
+        print(f"The file has been copied from:\n{source_path}\nto:\n{destination_path}.")
 
-    shutil.copy(source_path, new_destination_path)
-    print(f"The file has been copied from:\n{source_path}\nto:\n{new_destination_path}.")source_files = [
+source_files = [
     '/opt/victronenergy/gui/qml/main.qml',
     '/opt/victronenergy/gui/qml/OverviewHub.qml',
     '/opt/victronenergy/gui/qml/OverviewHubEnhanced.qml',
@@ -117,7 +118,7 @@ destination_directory_with_timestamp = os.path.join(destination_directory, curre
 
 if not os.path.exists(destination_directory_with_timestamp):
     os.makedirs(destination_directory_with_timestamp)
-    print(f"Directory {destination_directory_with_timestamp} created")
+    print(f"Directory {destination_directory_with_timestamp} created.")
 
 for file_path in source_files:
     file_name = os.path.basename(file_path)

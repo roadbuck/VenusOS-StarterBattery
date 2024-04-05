@@ -96,12 +96,11 @@ for file_info in files_to_copy:
 
         os.rename(destination_path, new_destination_path)
         print(f"Die existierende Datei wurde umbenannt zu:\n{new_destination_path}")
-
+        shutil.copy(source_path, destination_path)
+        print(f"Die neue Datei wurde nach:\n{destination_path}\nkopiert.")
     else:
-        new_destination_path = destination_path
-
-    shutil.copy(source_path, new_destination_path)
-    print(f"Die Datei wurde von:\n{source_path}\nnach:\n{new_destination_path}\nkopiert.")
+        shutil.copy(source_path, destination_path)
+        print(f"Die Datei wurde von:\n{source_path}\nnach:\n{destination_path}\nkopiert.")
 
 source_files = [
     '/opt/victronenergy/gui/qml/main.qml',
