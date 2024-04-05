@@ -102,7 +102,11 @@ here the StarterBattery
 
 ![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/85dfc947-8469-4917-aeb5-0f7a847ad503)
 
-You can turn on and off the visibility on the mainpage and modify the threshold values
+You can turn on and off the visibility on the mainpage...
+
+![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/c056de57-57cf-451b-8169-b8a06c139056)
+
+...and modify the threshold values
 
 ![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/f07a5ca5-0833-4af6-8215-a4882a4df7b7)
 
