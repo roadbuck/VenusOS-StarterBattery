@@ -94,21 +94,17 @@ Raspberry:
 svc -t /service/gui
 ```
 
-in the menu of the GX Device "Settings->Display & Language" you have now a new Menu for the StarterBattery:
+in the menu of the GX Device "Settings->Display & Language" you have now a new Menu for all my modules:
 
 ![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/0dedceea-34db-4b47-8d50-88bf184e0683)
 
-You can turn on and off the visibility on the mainpage
+here the StarterBattery
 
-![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/7b052ff2-6069-46ab-b4aa-6eb6f0ce5927)
+![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/85dfc947-8469-4917-aeb5-0f7a847ad503)
 
-in the config section...
+You can turn on and off the visibility on the mainpage and modify the threshold values
 
-![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/dfdf3143-b536-4f3a-b549-14a02fa513ab)
-
-...you can modify the threshold values
-
-![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/228c5b51-0014-4279-b853-df325713678d)
+![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/f07a5ca5-0833-4af6-8215-a4882a4df7b7)
 
 ## Additional Info
 If you use the GUI mods with activated temperature or tanksensor, there is not much space between the starter battery and the line from the inverter to the battery.
