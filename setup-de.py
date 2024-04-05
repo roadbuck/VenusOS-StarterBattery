@@ -30,14 +30,14 @@ def set_file_permissions(file_path, permissions):
         os.chmod(file_path, permissions)
         print(f"Berechtigungen für {file_path} auf {permissions} gesetzt.")
     except Exception as e:
-        print(f"Error setting permissions for {file_path}: {e}")
+        print(f"Error setting permissions for {file_path}:\n{e}")
 
 def run_bash_script(script_path):
     try:
         subprocess.run([script_path], check=True)
         print(f"Script {script_path} executed successfully.")
     except subprocess.CalledProcessError as e:
-        print(f"Error executing script {script_path}: {e}")
+        print(f"Error executing script {script_path}:\n{e}")
 
 if __name__ == "__main__":
     file_path = "/data/RoadbuckMods/StarterBattery/files/update_dbus_settings.sh"
@@ -95,10 +95,13 @@ for file_info in files_to_copy:
             new_destination_path = f"{base_name}_{counter}.rbm"
 
         os.rename(destination_path, new_destination_path)
-        print(f"Die existierende Datei wurde umbenannt zu {new_destination_path}")
+        print(f"Die existierende Datei wurde umbenannt zu:\n{new_destination_path}")
+
+    else:
+        new_destination_path = destination_path
 
     shutil.copy(source_path, new_destination_path)
-    print(f"Die Datei wurde von {source_path} nach {new_destination_path} kopiert")
+    print(f"Die Datei wurde von:\n{source_path}\nnach:\n{new_destination_path}\nkopiert.")
 
 source_files = [
     '/opt/victronenergy/gui/qml/main.qml',
@@ -116,10 +119,10 @@ destination_directory_with_timestamp = os.path.join(destination_directory, curre
 
 if not os.path.exists(destination_directory_with_timestamp):
     os.makedirs(destination_directory_with_timestamp)
-    print(f"Verzeichnis {destination_directory_with_timestamp} angelegt")
+    print(f"Verzeichnis {destination_directory_with_timestamp} angelegt.")
 
 for file_path in source_files:
     file_name = os.path.basename(file_path)
     destination_path = os.path.join(destination_directory_with_timestamp, file_name)
     shutil.copy(file_path, destination_path)
-    print(f"Datei {file_path} kopiert nach {destination_path}")
+    print(f"Datei {file_path} kopiert nach:\n{destination_path}")

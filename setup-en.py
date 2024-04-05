@@ -86,13 +86,22 @@ for file_info in files_to_copy:
     destination_path = file_info['destination']
 
     if os.path.exists(destination_path):
-        os.rename(destination_path, destination_path + '.orig')
-        print(f"The existing file has been renamed to {destination_path}.orig")
+        base_name, ext = os.path.splitext(destination_path)
+        counter = 1
+        new_destination_path = f"{base_name}_{counter}.rbm"
 
-    shutil.copy(source_path, destination_path)
-    print(f"The file has been copied from {source_path} to {destination_path}")
+        while os.path.exists(new_destination_path):
+            counter += 1
+            new_destination_path = f"{base_name}_{counter}.rbm"
 
-source_files = [
+        os.rename(destination_path, new_destination_path)
+        print(f"The existing file has been renamed to:\n{new_destination_path}")
+
+    else:
+        new_destination_path = destination_path
+
+    shutil.copy(source_path, new_destination_path)
+    print(f"The file has been copied from:\n{source_path}\nto:\n{new_destination_path}.")source_files = [
     '/opt/victronenergy/gui/qml/main.qml',
     '/opt/victronenergy/gui/qml/OverviewHub.qml',
     '/opt/victronenergy/gui/qml/OverviewHubEnhanced.qml',
