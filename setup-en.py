@@ -48,6 +48,10 @@ if __name__ == "__main__":
 
 files_to_copy = [
     {
+        'source': '/data/RoadbuckMods/StarterBattery/files/qml/RB_Menu.qml',
+        'destination': '/opt/victronenergy/gui/qml/RB_Menu.qml'
+    },
+    {
         'source': '/data/RoadbuckMods/StarterBattery/files/qml/RB_StarterBattery.qml',
         'destination': '/opt/victronenergy/gui/qml/RB_StarterBattery.qml'
     },
@@ -109,6 +113,7 @@ source_files = [
     '/opt/victronenergy/gui/qml/PageSettingsDisplay.qml',
     '/opt/victronenergy/gui/qml/PageSettingsRoadbuckStarterBattery.qml',
     '/opt/victronenergy/gui/qml/RB_StarterBattery.qml',
+    '/opt/victronenergy/gui/qml/RB_Menu.qml',
 ]
 
 destination_directory = '/data/RoadbuckMods/StarterBattery/backup_files'
