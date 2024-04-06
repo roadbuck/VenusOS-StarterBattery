@@ -67,9 +67,8 @@ nach diesen Zeilen (in der Nähe von Zeile 20)
 ## STEP 6
 Änderungen an der Datei **/opt/victronenergy/gui/qml/PageSettingsDisplay.qml**
 ```qml
-// RB Mods: add Menu
-		    RB_Menu { }
-```
+RB_Menu { } // RB Mods
+ ```
 ![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/a21b2fa3-67cb-4cf2-b6fd-65c0127d425a)
 
 
