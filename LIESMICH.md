@@ -69,8 +69,7 @@ nach diesen Zeilen (in der Nähe von Zeile 20)
 ```qml
 RB_Menu { } // RB Mods
  ```
-![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/a21b2fa3-67cb-4cf2-b6fd-65c0127d425a)
-
+![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/4b05696f-8fa8-45b7-8e62-f898dc7baaf2)
 
 Und das war's schon
 
