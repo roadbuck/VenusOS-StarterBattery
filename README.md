@@ -67,17 +67,9 @@ after this lines (near line 20)
 ## STEP 6
 Modifications to file **/opt/victronenergy/gui/qml/PageSettingsDisplay.qml**
 ```qml
-// // RB Mods: add Menu
-  MbSubMenu {
-   id: roadbuckModsMenu
-   description: qsTr("Roadbuck Mods")
-   subpage: Component {
-      PageSettingsRoadbuckMods { }
-   }
- }
+  RB_Menu { }  //RB Mods
 ```
-![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/a21b2fa3-67cb-4cf2-b6fd-65c0127d425a)
-
+![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/0c79c4ec-96e1-4cc0-be6e-96f764d3dc02)
 
 And that's it. 
 
