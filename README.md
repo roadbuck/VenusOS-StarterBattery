@@ -107,10 +107,27 @@ If you use the GUI mods with activated temperature or tanksensor, there is not m
 
 ![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/c2173458-e899-4182-b449-2706834a0bb3)
 
-To change that, you need just 3 little changes in the /opt/victronenergy/gui/qml/OverviewHubEnhanced.qml:
+To change that, you need just 3 little changes in the **/opt/victronenergy/gui/qml/OverviewHubEnhanced.qml**:
 
+Search for the Part with "id: dcBus2"
+comment out the line with "**top: dcConnect.top**" with two slashes (//) at the beginning
+and add the folowing line after
+```
+top: dcConnect.top; topMargin: 3 // RB Mods
+```
+comment out the line with "**bottom: dcConnect.top**" with two slashes (//) at the beginning
+and add the folowing line after
+```
+top: dcConnect.top; bottomMargin: -3 // RB Mods
+```
 ![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/8f7c3a46-8c1d-4ac8-b16b-2f1cee4ddbde)
 
+Search for the part with "id: multiToDcConnect"
+comment out the line with "**top: dcConnect.top**" with two slashes (//) at the beginning
+and add the folowing line after
+```
+top: dcConnect.top; topMargin: 3 // RB Mods
+```
 ![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/158d96d4-86bf-4157-8431-3c61a3215665)
 
 Now it should look like this:
