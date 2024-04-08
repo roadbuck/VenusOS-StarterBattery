@@ -110,8 +110,27 @@ Wenn man die GUI-Mods mit aktiviertem Temperatur- oder Tanksensor verwendet, ist
 
 Um das zu ändern, müssen nur 3 kleine Änderungen in der Datei **/opt/victronenergy/gui/qml/OverviewHubEnhanced.qml** gemacht werden:
 
+Suche nach dem Bereich mit "**id: dcBus2**"
+
+Die Zeile mit "**top: dcConnect.top**" durch zwei Slashes ( // ) am Anfang auskommentieren
+und die folgende Zeile danach einfügen
+```
+top: dcConnect.top; topMargin: 3 // RB Mods
+```
+Die Zeile mit "**bottom: dcConnect.top**" durch zwei Slashes ( // ) am Anfang auskommentieren
+und die folgende Zeile danach einfügen
+```
+top: dcConnect.top; bottomMargin: -3 // RB Mods
+```
 ![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/8f7c3a46-8c1d-4ac8-b16b-2f1cee4ddbde)
 
+Suche nach dem Bereich mit  "**id: multiToDcConnect**"
+
+Die Zeile mit "**top: dcConnect.top**" durch zwei Slashes ( // ) am Anfang auskommentieren
+und die folgende Zeile danach einfügen
+```
+top: dcConnect.top; topMargin: 3 // RB Mods
+```
 ![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/158d96d4-86bf-4157-8431-3c61a3215665)
 
 Nun sollte es so aussehen:
