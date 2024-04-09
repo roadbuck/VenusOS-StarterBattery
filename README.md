@@ -6,6 +6,8 @@ Tested with firmware
 
 ![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/1145eb5b-6487-476e-a5e8-aba6b58d941c)
 
+**WATCH THE VIDEO with detailed instructions: https://youtu.be/yKEn7av346c**
+
 Go to the commandline of your Victron GX device (Cerbo GX or a Raspberry Pi)
 
 Copy the code from step 1 to step 3, paste it on the commandline (right mouse button) and execute it. After that you have to modify 3 files (step 4-6).
