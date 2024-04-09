@@ -1,3 +1,6 @@
+> [!TIP]
+> **SCHAUT DAS VIDEO DAZU AN! Detailierte Videoanleitung: https://youtu.be/ajM2O-WOHqI**
+
 Dies fügt die Informationen über die Starterbatterie auf der Hauptseite des Cerbo GX / Raspberry hinzu und hat einen Konfigurationsabschnitt in den Einstellungen.
 
 Getestet mit Firmware
