@@ -1,5 +1,8 @@
 > [!TIP]
 > **SCHAUT DAS VIDEO DAZU AN! Detailierte Videoanleitung: https://youtu.be/ajM2O-WOHqI**
+>
+> ![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/21149a8e-54a6-4139-ac94-6206cc91ab6c)
+
 
 Dies fügt die Informationen über die Starterbatterie auf der Hauptseite des Cerbo GX / Raspberry hinzu und hat einen Konfigurationsabschnitt in den Einstellungen.
 
