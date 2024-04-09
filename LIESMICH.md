@@ -1,5 +1,5 @@
 > [!TIP]
-> **SCHAUT DAS VIDEO DAZU AN! Detailierte Videoanleitung: https://youtu.be/ajM2O-WOHqI**
+> **SCHAUT DAS VIDEO DAZU AN! Detailierte Videoanleitung: https://youtu.be/VEaY2Ch0KpQ**
 >
 > ![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/21149a8e-54a6-4139-ac94-6206cc91ab6c)
 
