@@ -1,3 +1,6 @@
+> [!TIP]
+> **WATCH THE VIDEO with detailed instructions: https://youtu.be/yKEn7av346c**
+
 This will add the Starter battery info on the main page of the Cerbo GX / Raspberry and has a config section in the settings.
 
 Tested with firmware
@@ -5,8 +8,6 @@ Tested with firmware
 - 3.30 standard & large
 
 ![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/1145eb5b-6487-476e-a5e8-aba6b58d941c)
-
-**WATCH THE VIDEO with detailed instructions: https://youtu.be/yKEn7av346c**
 
 Go to the commandline of your Victron GX device (Cerbo GX or a Raspberry Pi)
 
