@@ -126,7 +126,7 @@ top: dcConnect.top; topMargin: 3 // RB Mods
 Die Zeile mit "**bottom: dcConnect.top**" durch zwei Slashes ( // ) am Anfang auskommentieren
 und die folgende Zeile danach einfügen
 ```
-top: dcConnect.top; bottomMargin: -3 // RB Mods
+bottom: dcConnect.top; bottomMargin: -3 // RB Mods
 ```
 ![image](https://github.com/roadbuck/VenusOS-StarterBattery/assets/164482499/8f7c3a46-8c1d-4ac8-b16b-2f1cee4ddbde)
 
