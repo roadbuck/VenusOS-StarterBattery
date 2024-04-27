@@ -25,7 +25,7 @@ MbPage {
 			decimals: 1
 			step: 0.1
 			min: 10
-			max: 14
+			max: 28
 		}
 					writeAccessLevel: User.AccessUser
 			}
@@ -39,7 +39,7 @@ MbPage {
 			decimals: 1
 			step: 0.1
 			min: 10
-			max: 14
+			max: 28
 		}
 					writeAccessLevel: User.AccessUser
 			}
